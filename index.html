@@ -15,8 +15,47 @@
   <body>
     <h1>Frame Forge</h1>
     <div class="container">
-      <div class="options"></div>
-      div.
+      <div class="options">
+        Filters: <br><br>
+        <div class="filter-options">
+            <button id="brightness" class="filter-btn active">Brightness</button>
+            <button id="saturation" class="filter-btn">Saturation</button>
+            <button id="inversion" class="filter-btn">Inversion</button>
+            <button id="grayscale" class="filter-btn">Grayscale</button>
+            <button id="sepia" class="filter-btn">Sepia</button>
+            <button id="blur" class="filter-btn">Blur</button>
+        </div>
+        <div class="slider-info">
+            <div class="filter-info">
+                <span id="filter-name">Brightness</span>
+                <span id="filter-value">50%</span>
+            </div>
+            <input type="range" id="filter-slider" min="0" max="100" value="50" />
+        </div>
+        <br>Rotate & Flip: <br><br>
+        <div class="rotate-options">
+            <div class="rotate-slider-info">
+                <span class="rotate-info">0°</span><br>
+                <input type="range" id="rotate-slider" min="0" max="360" value="0" />
+            </div>
+            <div class="rotate-buttons">
+            <button id="left" class="rotate-btn">
+                ⟲ 
+            </button>
+            <button id="right" class="rotate-btn"> ⟳ </button>
+            <button id="vertical" class="rotate-btn"> ⇅ </button>
+            <button id="horizontal" class="rotate-btn"> ⇄ </button>
+        </div>
+        </div>
+        </div>
+        <div class="preview"></div>
+        
+      </div>
+      <div class="buttons">
+        <button id="reset">Reset</button>
+        <button id="upload">Upload Picture</button>
+        <button id="save">Save Picture</button>
+      </div>
     </div>
   </body>
 </html>
