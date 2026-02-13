@@ -122,3 +122,15 @@ h1 {
   margin-top: 1.2rem;
   width: 100%;
 }
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#preview-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
