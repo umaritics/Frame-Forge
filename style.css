@@ -134,3 +134,36 @@ h1 {
   object-fit: contain;
   border-radius: 10px;
 }
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .options,
+  .preview {
+    flex: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .preview {
+    min-height: 300px;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #upload {
+    margin-left: 10px;
+  }
+
+  #save {
+    margin-right: 10px;
+  }
+}
